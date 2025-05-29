@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { signInWithGooglePopup } from "../utils/firebase-utils"
+import { signInWithGooglePopup } from "../firebase"
 
 const SignIn = () => {
     const navigate = useNavigate(); // React Router hook for navigation
