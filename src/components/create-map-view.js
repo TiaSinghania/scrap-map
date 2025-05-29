@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { db } from "../firebase"; // Import Firestore setup
 import { collection, addDoc } from "firebase/firestore";
 
-function CreateMapView() {
+function CreateMapView({hideForm}) {
     const [map, setMap] = useState (
         {
             name: "New Map",
@@ -19,6 +19,7 @@ function CreateMapView() {
         } catch (e) {
             console.error("Error adding document: ", e);
         }
+        hideForm();
     };
 
     return (

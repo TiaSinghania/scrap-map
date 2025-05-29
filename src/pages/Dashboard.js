@@ -11,7 +11,7 @@ export default function Dashboard() {
         Create New ScrapMap
       </button>
       
-      {showCreateMap ? <CreateMapView /> : null}
+      {showCreateMap ? <CreateMapView hideForm={() => setShowCreateMap(false)} /> : null}
 
     </div>
   );
