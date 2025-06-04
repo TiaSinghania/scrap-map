@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import 'leaflet/dist/leaflet.css';
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import MapView from "./pages/MapView";
+
 
 function App() {
   return (
